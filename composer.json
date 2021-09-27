@@ -4,9 +4,15 @@
     "minimum-stability": "stable",
     "license": "proprietary",
     "authors": [
+        {
+            "name": "Wezy Lab",
+            "email": "dev@bewezy.com.br",
+            "role": "Team",
+            "homepage": "https://bewezy.com.br"
+        },
       {
         "name": "Fernando Ebert",
-        "email": "fernandoebert@ebertsystem.com",
+        "email": "me@fernandoebert.com",
         "role": "Developer",
         "homepage": "https://ebertsystem.com"
       }
