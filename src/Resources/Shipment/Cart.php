@@ -18,7 +18,6 @@ use MelhorEnvio\Validations\Number;
 class Cart
 {
 
-
     /**
      * @var array
      */
@@ -305,7 +304,6 @@ class Cart
             return ($this->activeRegister)['data'][0] ?? $this->activeRegister;
     }
 
-
     /**
      * @return bool
      * @throws CalculatorException
@@ -345,7 +343,6 @@ class Cart
             throw new CalculatorException($exception);
         }
     }
-
 
     /**
      * @param string $id

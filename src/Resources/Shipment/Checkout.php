@@ -127,6 +127,26 @@ class Checkout
     /**
      * @throws CalculatorException
      */
+    public function tracking()
+    {
+        $this->validateOrders();
+
+        try {
+            $response = $this->resource->getHttp()->post('me/shipment/tracking', [
+                'json' => [
+                    "orders" => $this->order
+                ],
+            ]);
+
+            return json_decode((string) $response->getBody(), true);
+        } catch (ClientException $exception) {
+            throw new CalculatorException($exception);
+        }
+    }
+
+    /**
+     * @throws CalculatorException
+     */
     private function validateOrders()
     {
         if($this->order) {
