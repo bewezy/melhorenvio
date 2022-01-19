@@ -326,6 +326,16 @@ class Cart
     }
 
     /**
+     * @param $string
+     * @return $this
+     */
+    public function loadPayload($string): Cart
+    {
+        $this->payload = json_decode($string, true);
+        return $this;
+    }
+
+    /**
      * @throws CalculatorException
      * @throws InvalidCalculatorPayloadException
      */
