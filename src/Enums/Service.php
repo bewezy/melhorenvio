@@ -41,4 +41,10 @@ class Service
      */
     const AZULCARGO_AMANHA = 15;
     const AZULCARGO_ECOMMERCE = 16;
+
+    /**
+     * Services - BUS LOG
+     */
+
+    const BUSLOG_FERROVIARIO = 22;
 }
