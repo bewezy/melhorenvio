@@ -206,6 +206,7 @@ vendor/bin/phpunit tests
 ### Changelog
 
 Consulte [CHANGELOG](CHANGELOG.md) para mais informações de alterações recentes.
+Atualizado em 19/02/2022
 
 ## Contribuindo
 
