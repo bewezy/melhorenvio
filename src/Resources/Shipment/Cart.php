@@ -329,9 +329,13 @@ class Cart
      * @param $string
      * @return $this
      */
-    public function loadPayload($string): Cart
+    public function loadPayload($string, $json = true): Cart
     {
-        $this->payload = json_decode($string, true);
+        if ($json){
+            $this->payload = json_decode($string, true);
+        } else {
+            $this->payload = $string;
+        }
         return $this;
     }
 
