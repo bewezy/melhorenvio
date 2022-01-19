@@ -327,6 +327,7 @@ class Cart
 
     /**
      * @param $string
+     * @param bool $json
      * @return $this
      */
     public function loadPayload($string, $json = true): Cart
